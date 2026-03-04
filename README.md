@@ -4,11 +4,6 @@
 <img src="assets/img/screenshot1.png" width="100%">
 <br><br>
 <img src="assets/img/screenshot2.png" width="100%">
-# 🌐 Modern Glassmorphism Admin Dashboard  
-A clean, responsive, multi-page **Admin Dashboard UI** built using **pure HTML + CSS only**.  
-Designed with a soft **glassmorphism aesthetic** and a modern professional layout — perfect for portfolios and resumes.
-
----
 
 ## 🚀 Features
 
