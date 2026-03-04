@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="logo">Dashboard</h2>
+        <ul>
+            <li><a href="index.html">🏠 Dashboard</a></li>
+            <li><a href="analytics.html">📊 Analytics</a></li>
+            <li><a href="users.html">👤 Users</a></li>
+            <li><a class="active" href="settings.html">⚙ Settings</a></li>
+            <li><a href="reports.html">📁 Reports</a></li>
+        </ul>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <h1>Settings</h1>
+        <div class="profile">
+            <span>User</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <h2 class="section-title">Profile Settings</h2>
+        <div class="settings-card">
+
+            <div class="avatar-large"></div>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe">
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="john@example.com">
+            </div>
+
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="text" placeholder="+1 234 567 890">
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Account Settings</h2>
+        <div class="settings-card">
+
+            <div class="input-group">
+                <label>Change Password</label>
+                <input type="password" placeholder="New Password">
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password">
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Preferences</h2>
+        <div class="settings-card">
+
+            <div class="toggle-row">
+                <span>Enable Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-row">
+                <span>Email Notifications</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-row">
+                <span>Show Profile Publicly</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
