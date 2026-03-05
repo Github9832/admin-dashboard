@@ -3,51 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analytics | AdminX</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Analytics - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- Sidebar -->
     <div class="sidebar">
-        <div class="logo">
-            <img src="assets/logo/logo.svg">
-        </div>
-
-        <a href="index.html">🏠 Dashboard</a>
-        <a href="users.html">👥 Users</a>
-        <a href="analytics.html" class="active">📊 Analytics</a>
-        <a href="messages.html">💬 Messages</a>
-        <a href="settings.html">⚙️ Settings</a>
-        <a href="login.html">🚪 Logout</a>
+        <h2 class="logo">Dashboard</h2>
+        <ul>
+            <li><a href="index.html">🏠 Dashboard</a></li>
+            <li><a class="active" href="analytics.html">📊 Analytics</a></li>
+            <li><a href="users.html">👤 Users</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="reports.html">📁 Reports</a></li>
+        </ul>
     </div>
 
-    <div class="main-content">
+    <!-- Topbar -->
+    <div class="topbar">
+        <h1>Analytics</h1>
+        <div class="profile">
+            <span>User</span>
+        </div>
+    </div>
 
-        <div class="topbar">
-            <h2>Analytics Overview</h2>
-            <img src="assets/img/profile.jpg" class="user-img">
+    <!-- Page Content -->
+    <div class="main">
+
+        <!-- Row 1 -->
+        <div class="grid">
+            <div class="card analytics-card">
+                <h3>Daily Users</h3>
+                <div class="fake-chart"></div>
+            </div>
+
+            <div class="card analytics-card">
+                <h3>Active Sessions</h3>
+                <div class="fake-chart"></div>
+            </div>
+
+            <div class="card analytics-card">
+                <h3>Conversion Rate</h3>
+                <div class="fake-chart"></div>
+            </div>
         </div>
 
-        <div class="card-row">
-            <div class="small-card">
-                <h3>Visitors Today</h3>
-                <p>3,210</p>
-            </div>
-            <div class="small-card">
+        <!-- Row 2 -->
+        <div class="grid">
+            <div class="card analytics-card">
                 <h3>Bounce Rate</h3>
-                <p>28%</p>
+                <div class="fake-chart"></div>
             </div>
-            <div class="small-card">
-                <h3>New Signups</h3>
-                <p>87</p>
-            </div>
-        </div>
 
-        <div class="glass-card">
-            <h3>Traffic Sources</h3>
-            <p>Chart area (you can add images or real charts later)</p>
+            <div class="card analytics-card">
+                <h3>New Signups</h3>
+                <div class="fake-chart"></div>
+            </div>
+
+            <div class="card analytics-card">
+                <h3>Revenue (Approx)</h3>
+                <div class="fake-chart"></div>
+            </div>
         </div>
-        
 
     </div>
 
