@@ -1,76 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Security Settings | AdminX</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta
+      name="description"
+      content="Update password and account security controls in AdminX."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="settings-security.html" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand"><h1>AdminX</h1><p>Control center</p></div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li
+              ><a class="active" aria-current="page" href="settings.html"
+                >Settings</a
+              ></li
+            >
+          </ul>
+          <p class="sub-nav-title">Settings Sections</p>
+          <ul class="sub-nav-list">
+            <li><a href="settings.html">Overview</a></li>
+            <li><a href="settings-profile.html">Profile</a></li>
+            <li
+              ><a
+                class="active"
+                aria-current="page"
+                href="settings-security.html"
+                >Security</a
+              ></li
+            >
+            <li><a href="settings-preferences.html">Preferences</a></li>
+          </ul>
+        </nav>
+        <div class="nav-footer"><a href="login.html">Sign out</a></div>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <h1>Security Settings</h1>
+            <p>Protect your account with strong password and login controls.</p>
+          </div>
+          <div class="user-chip"><strong>Divya Nehete Admin</strong></div>
+        </header>
 
-<body>
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <h2 class="logo">AdminX</h2>
-
-        <a href="index.html">🏠 Dashboard</a>
-        <a href="analytics.html">📊 Analytics</a>
-        <a href="users.html">👤 Users</a>
-        <a href="messages.html">💬 Messages</a>
-        <a href="reports.html">📑 Reports</a>
-
-        <div class="settings-submenu">
-            <a href="settings.html">⚙ Settings Home</a>
-            <a href="settings-profile.html">🧑 Profile</a>
-            <a href="settings-security.html" class="active">🔒 Security</a>
-            <a href="settings-preferences.html">✨ Preferences</a>
-        </div>
-
-        <a href="login.html" class="logout">🚪 Logout</a>
-    </aside>
-
-    <!-- Main Content -->
-    <div class="main">
-        <h1>Security Settings</h1>
-
-        <div class="settings-card">
-            <h2>Change Password</h2>
-
+        <section class="settings-card">
+          <h2>Change Password</h2>
+          <div class="input-group">
+            <label for="current-password">Current Password</label>
+            <input
+              id="current-password"
+              type="password"
+              placeholder="Enter current password"
+            />
+          </div>
+          <div class="form-row">
             <div class="input-group">
-                <label>Current Password</label>
-                <input type="password" placeholder="Enter current password">
+              <label for="new-password">New Password</label>
+              <input
+                id="new-password"
+                type="password"
+                placeholder="Enter new password"
+              />
             </div>
-
-            <div class="form-row">
-                <div class="input-group">
-                    <label>New Password</label>
-                    <input type="password" placeholder="Enter new password">
-                </div>
-
-                <div class="input-group">
-                    <label>Confirm Password</label>
-                    <input type="password" placeholder="Re-enter new password">
-                </div>
+            <div class="input-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                id="confirm-password"
+                type="password"
+                placeholder="Re-enter new password"
+              />
             </div>
+          </div>
+          <button class="save-btn" type="button">Update Password</button>
+        </section>
 
-            <button class="save-btn">Update Password</button>
-        </div>
-
-        <div class="settings-card">
-            <h2>Two-Factor Authentication (2FA)</h2>
-
-            <div class="toggle-row">
-                <span>Enable 2FA</span>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-            <p class="note">Adds an extra layer of security to your account.</p>
-        </div>
-
+        <section class="settings-card">
+          <h2>Two-Factor Authentication (2FA)</h2>
+          <div class="toggle-row">
+            <span>Enable 2FA</span>
+            <label class="switch"
+              ><input type="checkbox" /><span class="slider"></span
+            ></label>
+          </div>
+          <p class="note">Adds an extra layer of security to your account.</p>
+        </section>
+      </main>
     </div>
-
-</body>
+  </body>
 </html>

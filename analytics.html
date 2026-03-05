@@ -1,77 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analytics - Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="logo">
-    <img src="assets/logo/logo.svg" alt="AdminX Logo">
-</div>
- 
-        <ul>
-            <li><a href="index.html">🏠 Dashboard</a></li>
-            <li><a class="active" href="analytics.html">📊 Analytics</a></li>
-            <li><a href="users.html">👤 Users</a></li>
-            <li><a href="settings.html">⚙ Settings</a></li>
-            <li><a href="reports.html">📁 Reports</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Analytics Dashboard | AdminX</title>
+    <meta
+      name="description"
+      content="Analytics view for traffic, sessions, conversion, and revenue trends."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="analytics.html" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand"><h1>AdminX</h1><p>Control center</p></div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li
+              ><a class="active" aria-current="page" href="analytics.html"
+                >Analytics</a
+              ></li
+            >
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+        <div class="nav-footer"><a href="login.html">Sign out</a></div>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <h1>Analytics</h1>
+            <p>Review trend snapshots for product and customer performance.</p>
+          </div>
+          <div class="user-chip"><strong>Divya Nehete Admin</strong></div>
+        </header>
+        <section class="grid" aria-label="Analytics widgets">
+          <article class="analytics-card"
+            ><h2 class="section-title">Daily Users</h2
+            ><div class="fake-chart" aria-hidden="true"></div
+          ></article>
+          <article class="analytics-card"
+            ><h2 class="section-title">Active Sessions</h2
+            ><div class="fake-chart" aria-hidden="true"></div
+          ></article>
+          <article class="analytics-card"
+            ><h2 class="section-title">Conversion Rate</h2
+            ><div class="fake-chart" aria-hidden="true"></div
+          ></article>
+          <article class="analytics-card"
+            ><h2 class="section-title">Bounce Rate</h2
+            ><div class="fake-chart" aria-hidden="true"></div
+          ></article>
+          <article class="analytics-card"
+            ><h2 class="section-title">New Signups</h2
+            ><div class="fake-chart" aria-hidden="true"></div
+          ></article>
+          <article class="analytics-card"
+            ><h2 class="section-title">Revenue Forecast</h2
+            ><div class="fake-chart" aria-hidden="true"></div
+          ></article>
+        </section>
+      </main>
     </div>
-
-    <!-- Topbar -->
-    <div class="topbar">
-        <h1>Analytics</h1>
-        <div class="profile">
-            <span>User</span>
-        </div>
-    </div>
-
-    <!-- Page Content -->
-    <div class="main">
-
-        <!-- Row 1 -->
-        <div class="grid">
-            <div class="card analytics-card">
-                <h3>Daily Users</h3>
-                <div class="fake-chart"></div>
-            </div>
-
-            <div class="card analytics-card">
-                <h3>Active Sessions</h3>
-                <div class="fake-chart"></div>
-            </div>
-
-            <div class="card analytics-card">
-                <h3>Conversion Rate</h3>
-                <div class="fake-chart"></div>
-            </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="grid">
-            <div class="card analytics-card">
-                <h3>Bounce Rate</h3>
-                <div class="fake-chart"></div>
-            </div>
-
-            <div class="card analytics-card">
-                <h3>New Signups</h3>
-                <div class="fake-chart"></div>
-            </div>
-
-            <div class="card analytics-card">
-                <h3>Revenue (Approx)</h3>
-                <div class="fake-chart"></div>
-            </div>
-        </div>
-
-    </div>
-
-</body>
+  </body>
 </html>

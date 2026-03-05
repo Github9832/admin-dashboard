@@ -1,104 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings - Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2 class="logo">Dashboard</h2>
-        <ul>
-            <li><a href="index.html">🏠 Dashboard</a></li>
-            <li><a href="analytics.html">📊 Analytics</a></li>
-            <li><a href="users.html">👤 Users</a></li>
-            <li><a class="active" href="settings.html">⚙ Settings</a></li>
-            <li><a href="reports.html">📁 Reports</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Settings Home | AdminX</title>
+    <meta
+      name="description"
+      content="Manage profile, account security, and preference settings in AdminX."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="settings.html" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand"><h1>AdminX</h1><p>Control center</p></div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li
+              ><a class="active" aria-current="page" href="settings.html"
+                >Settings</a
+              ></li
+            >
+          </ul>
+          <p class="sub-nav-title">Settings Sections</p>
+          <ul class="sub-nav-list">
+            <li
+              ><a class="active" aria-current="page" href="settings.html"
+                >Overview</a
+              ></li
+            >
+            <li><a href="settings-profile.html">Profile</a></li>
+            <li><a href="settings-security.html">Security</a></li>
+            <li><a href="settings-preferences.html">Preferences</a></li>
+          </ul>
+        </nav>
+        <div class="nav-footer"><a href="login.html">Sign out</a></div>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <h1>Settings</h1>
+            <p>Configure your account and personalize your workspace.</p>
+          </div>
+          <div class="user-chip"><strong>Divya Nehete Admin</strong></div>
+        </header>
+        <section class="settings-card">
+          <h2>Profile Snapshot</h2>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="John Doe" />
+            </div>
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" placeholder="john@example.com" />
+            </div>
+          </div>
+        </section>
+        <section class="settings-card">
+          <h2>Account Controls</h2>
+          <div class="toggle-row">
+            <span>Email Notifications</span>
+            <label class="switch"
+              ><input type="checkbox" checked /><span class="slider"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <span>Two-Factor Authentication</span>
+            <label class="switch"
+              ><input type="checkbox" /><span class="slider"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <span>Public Profile</span>
+            <label class="switch"
+              ><input type="checkbox" /><span class="slider"></span
+            ></label>
+          </div>
+        </section>
+      </main>
     </div>
-
-    <!-- Topbar -->
-    <div class="topbar">
-        <h1>Settings</h1>
-        <div class="profile">
-            <span>User</span>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main">
-
-        <h2 class="section-title">Profile Settings</h2>
-        <div class="settings-card">
-
-            <div class="avatar-large"></div>
-
-            <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="John Doe">
-            </div>
-
-            <div class="input-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="john@example.com">
-            </div>
-
-            <div class="input-group">
-                <label>Phone</label>
-                <input type="text" placeholder="+1 234 567 890">
-            </div>
-
-        </div>
-
-        <h2 class="section-title">Account Settings</h2>
-        <div class="settings-card">
-
-            <div class="input-group">
-                <label>Change Password</label>
-                <input type="password" placeholder="New Password">
-            </div>
-
-            <div class="input-group">
-                <label>Confirm Password</label>
-                <input type="password" placeholder="Confirm Password">
-            </div>
-
-        </div>
-
-        <h2 class="section-title">Preferences</h2>
-        <div class="settings-card">
-
-            <div class="toggle-row">
-                <span>Enable Dark Mode</span>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-            <div class="toggle-row">
-                <span>Email Notifications</span>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-            <div class="toggle-row">
-                <span>Show Profile Publicly</span>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div>
-
-    </div>
-
-</body>
+  </body>
 </html>

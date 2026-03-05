@@ -1,108 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users - Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="logo">
-    <img src="assets/logo/logo.svg" alt="AdminX Logo">
-</div>
-        <ul>
-            <li><a href="index.html">🏠 Dashboard</a></li>
-            <li><a href="analytics.html">📊 Analytics</a></li>
-            <li><a class="active" href="users.html">👤 Users</a></li>
-            <li><a href="settings.html">⚙ Settings</a></li>
-            <li><a href="reports.html">📁 Reports</a></li>
-        </ul>
-    </div>
-
-    <!-- Topbar -->
-    <div class="topbar">
-        <h1>Users</h1>
-        <div class="profile">
-            <span>User</span>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="main">
-
-        <!-- Search Bar -->
-        <div class="search-box">
-            <input type="text" placeholder="Search users...">
-        </div>
-
-        <!-- User Cards -->
-        <h2 class="section-title">User Cards</h2>
-        <div class="user-card-grid">
-
-            <div class="user-card">
-                <div class="avatar"></div>
-                <h3>John Doe</h3>
-                <p>Role: <span class="role admin">Admin</span></p>
-            </div>
-
-            <div class="user-card">
-                <div class="avatar"></div>
-                <h3>Sarah Smith</h3>
-                <p>Role: <span class="role editor">Editor</span></p>
-            </div>
-
-            <div class="user-card">
-                <div class="avatar"></div>
-                <h3>Michael Lee</h3>
-                <p>Role: <span class="role viewer">Viewer</span></p>
-            </div>
-
-        </div>
-
-        <!-- User Table -->
-        <h2 class="section-title" style="margin-top:40px;">User List</h2>
-
-        <div class="table-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Management | AdminX</title>
+    <meta
+      name="description"
+      content="User management area for admin teams to monitor roles, status, and accounts."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="users.html" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand"><h1>AdminX</h1><p>Control center</p></div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Dashboard</a></li>
+            <li
+              ><a class="active" aria-current="page" href="users.html"
+                >Users</a
+              ></li
+            >
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+        <div class="nav-footer"><a href="login.html">Sign out</a></div>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <h1>Users</h1>
+            <p>Manage members, roles, and account status.</p>
+          </div>
+          <div class="user-chip"><strong>Divya Nehete Admin</strong></div>
+        </header>
+        <section class="glass-card" aria-label="Search users">
+          <label class="sr-only" for="user-search">Search users</label>
+          <div class="search-box"
+            ><input
+              id="user-search"
+              type="search"
+              placeholder="Search users by name or email"
+          /></div>
+        </section>
+        <section aria-labelledby="cards-title">
+          <h2 class="section-title" id="cards-title"
+            >Highlighted Team Members</h2
+          >
+          <div class="user-card-grid">
+            <article class="user-card">
+              <div class="avatar" aria-hidden="true"></div>
+              <h3>John Doe</h3>
+              <p><span class="role admin">Admin</span></p>
+            </article>
+            <article class="user-card">
+              <div class="avatar" aria-hidden="true"></div>
+              <h3>Sarah Smith</h3>
+              <p><span class="role editor">Editor</span></p>
+            </article>
+            <article class="user-card">
+              <div class="avatar" aria-hidden="true"></div>
+              <h3>Michael Lee</h3>
+              <p><span class="role viewer">Viewer</span></p>
+            </article>
+          </div>
+        </section>
+        <section class="glass-card" aria-labelledby="table-title">
+          <h2 class="section-title" id="table-title">User Directory</h2>
+          <div class="table-container">
             <table class="user-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Role</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>john@example.com</td>
-                        <td><span class="role admin">Admin</span></td>
-                        <td><span class="status active">Active</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Sarah Smith</td>
-                        <td>sarah@example.com</td>
-                        <td><span class="role editor">Editor</span></td>
-                        <td><span class="status inactive">Inactive</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Michael Lee</td>
-                        <td>michael@example.com</td>
-                        <td><span class="role viewer">Viewer</span></td>
-                        <td><span class="status active">Active</span></td>
-                    </tr>
-
-                </tbody>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>john@example.com</td>
+                  <td><span class="role admin">Admin</span></td>
+                  <td><span class="status active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Sarah Smith</td>
+                  <td>sarah@example.com</td>
+                  <td><span class="role editor">Editor</span></td>
+                  <td><span class="status inactive">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>Michael Lee</td>
+                  <td>michael@example.com</td>
+                  <td><span class="role viewer">Viewer</span></td>
+                  <td><span class="status active">Active</span></td>
+                </tr>
+              </tbody>
             </table>
-        </div>
-
+          </div>
+        </section>
+      </main>
     </div>
-
-</body>
+  </body>
 </html>
