@@ -720,3 +720,113 @@ input:checked + .slider:before {
 .switch input:checked + .slider:before {
     transform: translateX(24px);
 }
+/* ---------- MESSAGES PAGE ---------- */
+
+.messages-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+
+/* Message List */
+.message-list {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 18px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.message-item {
+    padding: 15px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.35);
+    transition: 0.2s ease;
+}
+
+.message-item:hover {
+    background: rgba(255,255,255,0.55);
+}
+
+.message-item.active {
+    background: #2b63ff;
+    color: white;
+}
+
+.message-item h3 {
+    margin-bottom: 5px;
+}
+
+.message-item span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Chat Area */
+.chat-area {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    margin-bottom: 15px;
+}
+
+.chat-box {
+    flex: 1;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.chat-message {
+    max-width: 70%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 14px;
+    font-size: 15px;
+}
+
+.chat-message.sender {
+    background: #2b63ff;
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.chat-message.receiver {
+    background: rgba(255,255,255,0.5);
+    margin-left: auto;
+    border-bottom-left-radius: 2px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 14px;
+    border: none;
+    background: rgba(255,255,255,0.5);
+}
+
+.chat-input button {
+    padding: 12px 25px;
+    background: #2b63ff;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    cursor: pointer;
+}
