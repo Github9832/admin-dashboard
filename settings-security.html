@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Settings | AdminX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">AdminX</h2>
+
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="analytics.html">📊 Analytics</a>
+        <a href="users.html">👤 Users</a>
+        <a href="messages.html">💬 Messages</a>
+        <a href="reports.html">📑 Reports</a>
+
+        <div class="settings-submenu">
+            <a href="settings.html">⚙ Settings Home</a>
+            <a href="settings-profile.html">🧑 Profile</a>
+            <a href="settings-security.html" class="active">🔒 Security</a>
+            <a href="settings-preferences.html">✨ Preferences</a>
+        </div>
+
+        <a href="login.html" class="logout">🚪 Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h1>Security Settings</h1>
+
+        <div class="settings-card">
+            <h2>Change Password</h2>
+
+            <div class="input-group">
+                <label>Current Password</label>
+                <input type="password" placeholder="Enter current password">
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label>New Password</label>
+                    <input type="password" placeholder="Enter new password">
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Re-enter new password">
+                </div>
+            </div>
+
+            <button class="save-btn">Update Password</button>
+        </div>
+
+        <div class="settings-card">
+            <h2>Two-Factor Authentication (2FA)</h2>
+
+            <div class="toggle-row">
+                <span>Enable 2FA</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <p class="note">Adds an extra layer of security to your account.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

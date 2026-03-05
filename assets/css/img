@@ -1,0 +1,4 @@
+bg.jpg
+screenshot1.png
+screenshot2.png
+background-image: url("../img/bg.jpg");

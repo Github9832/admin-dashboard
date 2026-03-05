@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings | AdminX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">AdminX</h2>
+
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="analytics.html">📊 Analytics</a>
+        <a href="users.html">👤 Users</a>
+        <a href="messages.html">💬 Messages</a>
+        <a href="reports.html">📑 Reports</a>
+
+        <div class="settings-submenu">
+            <a href="settings.html">⚙ Settings Home</a>
+            <a href="settings-profile.html" class="active">🧑 Profile</a>
+            <a href="settings-security.html">🔒 Security</a>
+            <a href="settings-preferences.html">✨ Preferences</a>
+        </div>
+
+        <a href="login.html" class="logout">🚪 Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h1>Profile Settings</h1>
+
+        <div class="settings-card">
+            <h2>Basic Information</h2>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Divya Sharma">
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="divya@email.com">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="+91 9876543210">
+                </div>
+
+                <div class="input-group">
+                    <label>Job Role</label>
+                    <input type="text" placeholder="Frontend Developer">
+                </div>
+            </div>
+
+            <button class="save-btn">Save Changes</button>
+        </div>
+
+        <div class="settings-card">
+            <h2>Profile Photo</h2>
+
+            <div class="profile-photo-section">
+                <img src="https://via.placeholder.com/90" class="profile-photo">
+                <button class="upload-btn">Upload New</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
