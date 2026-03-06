@@ -730,3 +730,11 @@ button:hover,
     max-width: none;
   }
 }
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background-image:url("../img/bg.svg");
+background-size:cover;
+background-position:center;
+}
