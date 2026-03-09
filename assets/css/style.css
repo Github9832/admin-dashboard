@@ -38,6 +38,18 @@ body {
   line-height: 1.5;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 20px 40;
+}
+
+.logo img{
+    width:120px;
+}
+
+
 img {
   max-width: 100%;
   display: block;

@@ -1,44 +1,24 @@
-<svg width="180" height="180" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Background Circle -->
-  <circle cx="100" cy="100" r="95" fill="#b7d2e2"/>
+<!-- Background Circle -->
+<circle cx="70" cy="70" r="70" fill="#B8D6E8"/>
 
-  <!-- Left Panel -->
-  <polygon points="60,55 115,45 115,145 60,135" fill="#3d74b1"/>
+<!-- Left Panel -->
+<polygon points="35,45 80,35 80,105 35,95" fill="#3F73B5"/>
 
-  <!-- Right Panel -->
-  <polygon points="115,45 160,75 160,175 115,145" fill="#7fb2cf"/>
+<!-- Right Panel -->
+<polygon points="80,35 110,55 110,115 80,105" fill="#7FB6D4"/>
 
-  <!-- Gear -->
-  <g fill="#2d5e9e" transform="translate(130,100) scale(0.8)">
-      <circle cx="0" cy="0" r="12"/>
-      <rect x="-3" y="-30" width="6" height="12"/>
-      <rect x="-3" y="18" width="6" height="12"/>
-      <rect x="18" y="-3" width="12" height="6"/>
-      <rect x="-30" y="-3" width="12" height="6"/>
-      <rect x="13" y="-23" width="6" height="12" transform="rotate(45)"/>
-      <rect x="-19" y="11" width="6" height="12" transform="rotate(45)"/>
-      <rect x="13" y="11" width="6" height="12" transform="rotate(-45)"/>
-      <rect x="-19" y="-23" width="6" height="12" transform="rotate(-45)"/>
-  </g>
+<!-- Letter A -->
+<text x="52" y="82" font-size="42" font-family="Arial" fill="white" font-weight="bold">A</text>
 
-  <!-- Letter A -->
-  <text x="78" y="110"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="50"
-        fill="white"
-        font-weight="bold"
-        text-anchor="middle">
-        A
-  </text>
-
-  <!-- AdminX Label -->
-  <text x="100" y="185"
-        font-family="Arial"
-        font-size="16"
-        text-anchor="middle"
-        fill="#2d5e9e">
-        AdminX
-  </text>
+<!-- Gear Symbol -->
+<g transform="translate(88,65) scale(0.8)">
+<circle cx="0" cy="0" r="10" fill="#3F73B5"/>
+<rect x="-2" y="-20" width="4" height="8" fill="#3F73B5"/>
+<rect x="-2" y="12" width="4" height="8" fill="#3F73B5"/>
+<rect x="-20" y="-2" width="8" height="4" fill="#3F73B5"/>
+<rect x="12" y="-2" width="8" height="4" fill="#3F73B5"/>
+</g>
 
 </svg>
